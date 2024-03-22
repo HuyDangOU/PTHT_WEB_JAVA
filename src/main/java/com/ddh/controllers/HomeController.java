@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
     @Autowired
     private CategoryService categoryService;
-    @RequestMapping(value="/")
+    @RequestMapping("/")
     public String home(Model model) {
         model.addAttribute("categories", categoryService.getAll());
         return "index";

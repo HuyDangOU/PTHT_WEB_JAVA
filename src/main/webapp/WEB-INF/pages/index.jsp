@@ -21,11 +21,11 @@
       <li class="nav-item">
         <a class="nav-link active" href="#">Commercial Website</a>
       </li>
-      <C:foreach items="${categories}" var="cate">
+      <c:forEach items="${categories}" var="cate">
      <li class="nav-item" >
         <a class="nav-link" href="#">${cate.name}</a>
       </li>
-    </C:foreach>
+    </c:forEach>
     </ul>
   </div>
 </nav>
